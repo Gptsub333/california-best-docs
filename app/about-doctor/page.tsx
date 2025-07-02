@@ -69,7 +69,13 @@ const DoctorProfilePage = () => {
                         <div className="flex-shrink-0 w-full sm:w-auto mt-4 sm:mt-0">
                             <div className="bg-blue-600 text-white px-4 py-2 rounded-lg text-center">
                                 <div className="text-xs mb-1">✓ Board Certified</div>
-                                <div className="text-xs">Ensuring the highest standards of care.</div>
+                                <div className="text-xs mb-3">Ensuring the highest standards of care.</div>
+                                <Link 
+                                    href="/boardinfo" 
+                                    className="inline-block bg-white text-blue-600 px-3 py-1 rounded text-xs font-medium hover:bg-gray-100 transition-colors"
+                                >
+                                    View Board Actions
+                                </Link>
                             </div>
                         </div>
                     </div>

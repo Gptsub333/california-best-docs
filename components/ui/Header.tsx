@@ -28,7 +28,7 @@ export default function Header() {
         {/* Desktop Navigation - Hidden on mobile */}
         <nav className="hidden md:flex items-center space-x-4">
           <Link
-            href="#"
+            href="/docwatch"
             className="px-4 py-2 text-gray-600 border border-gray-200 rounded-md shadow-sm hover:text-blue-600 hover:border-blue-200 hover:shadow font-medium transition-all"
           >
             DocWatch
