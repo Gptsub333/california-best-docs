@@ -386,8 +386,6 @@ const SearchResultsPage = () => {
                                                 <p className="text-sm text-gray-500">123 Health St, Wellness City, TX ({formatDistance(doctor.distance)})</p>
                                             </div>
                                             <div className="flex items-center justify-center sm:justify-start gap-2 text-gray-500 mb-3">
-                                                <Star className="w-4 h-4 text-yellow-400" />
-                                                <p className="text-sm text-gray-500">{doctor.rating} ({doctor.reviews} reviews)</p>
                                             </div>
                                             <Link href="/about-doctor"  className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 sm:py-1.5 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
                                                 View Profile
