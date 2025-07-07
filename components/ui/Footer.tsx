@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-200 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center">
         <div className="text-sm text-gray-500 space-y-2">
-          <p>© 2025 California Best Doc. All rights reserved.</p>
+          <p>© 2025 California Best Docs. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
             <Link 
               href="/privacy" 
