@@ -45,7 +45,7 @@ const ProfilePage = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             <Header />
-            
+
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
                 {/* Header Section - Improved for mobile */}
                 <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 border border-gray-100">
@@ -59,9 +59,9 @@ const ProfilePage = () => {
                                         {profileData.name.split(' ').map(n => n[0]).join('')}
                                     </span>
                                 </div>
-                                <img 
-                                    src="/api/placeholder/128/128" 
-                                    alt="Profile" 
+                                <img
+                                    src="/api/placeholder/128/128"
+                                    alt="Profile"
                                     className="absolute inset-0 w-full h-full object-cover"
                                     onError={(e) => {
                                         e.currentTarget.style.display = 'none';
@@ -89,7 +89,7 @@ const ProfilePage = () => {
                                     ) : (
                                         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{profileData.name}</h1>
                                     )}
-                                    
+
                                     {isEditing ? (
                                         <input
                                             type="text"
@@ -101,7 +101,7 @@ const ProfilePage = () => {
                                         <p className="text-lg sm:text-xl text-blue-600 font-medium">{profileData.specialty}</p>
                                     )}
                                 </div>
-                                
+
                                 {/* Edit/Save Buttons - Full width on mobile */}
                                 <div className="flex gap-2 mt-4 lg:mt-0 w-full lg:w-auto">
                                     {isEditing ? (
@@ -133,7 +133,7 @@ const ProfilePage = () => {
                                 </div>
                             </div>
 
-                            {/* Quick Stats - Better wrapping on mobile */}
+
                             <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-6 mb-4 sm:mb-6">
                                 <div className="flex items-center gap-2">
                                     <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
@@ -231,7 +231,7 @@ const ProfilePage = () => {
                         {/* Education & Certifications */}
                         <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-100">
                             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Education & Certifications</h2>
-                            
+
                             <div className="space-y-5 sm:space-y-6">
                                 <div>
                                     <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
@@ -317,7 +317,7 @@ const ProfilePage = () => {
                                     )}
                                 </div>
                             </div>
-                            
+
                             {!isEditing && (
                                 <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
                                     <button className="w-full bg-blue-600 text-white py-2.5 sm:py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
@@ -359,7 +359,7 @@ const ProfilePage = () => {
                                     </div>
                                     <p className="text-xs sm:text-sm text-gray-700">"Excellent doctor, very thorough and caring."</p>
                                 </div>
-                                
+
                                 <div className="border-b border-gray-100 pb-3 sm:pb-4">
                                     <div className="flex items-center gap-2 mb-1 sm:mb-2">
                                         <div className="flex text-yellow-400">
@@ -372,7 +372,7 @@ const ProfilePage = () => {
                                     <p className="text-xs sm:text-sm text-gray-700">"Great experience, highly recommend!"</p>
                                 </div>
                             </div>
-                            
+
                             <button className="w-full text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm mt-3 sm:mt-4">
                                 View All Reviews
                             </button>

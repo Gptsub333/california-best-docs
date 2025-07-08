@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
 import { motion } from 'framer-motion';
-import { 
-  User, 
-  AlertTriangle, 
-  FileText, 
+import {
+  User,
+  AlertTriangle,
+  FileText,
   Calendar,
   MapPin,
   Shield
@@ -76,15 +76,15 @@ const boardActionsData = [
 const doctorInfo = {
   name: "JAMES KEVIN KAUFMAN",
   specialty: "Neurological Surgery Physician (CA)",
-  image: "/xyz.png" // Using the same placeholder as your project
+  image: "/california-logo.png" // Using the same placeholder as your project
 };
 
 export default function BoardInfoPage() {
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.6 }
     }
@@ -102,8 +102,8 @@ export default function BoardInfoPage() {
 
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.95 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
       transition: { duration: 0.4 }
     }
@@ -138,7 +138,7 @@ export default function BoardInfoPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Hero Section with Doctor Info */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
@@ -151,7 +151,7 @@ export default function BoardInfoPage() {
             <div className="w-24 h-24 mx-auto mb-6 bg-white/20 rounded-full flex items-center justify-center">
               <User className="w-12 h-12 text-white" />
             </div>
-            
+
             <h1 className="text-3xl md:text-4xl font-bold mb-2">{doctorInfo.name}</h1>
             <p className="text-xl text-blue-100">{doctorInfo.specialty}</p>
           </motion.div>
@@ -160,7 +160,7 @@ export default function BoardInfoPage() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-        
+
         {/* Board Actions List - Mixed Layout */}
         <motion.div
           variants={staggerContainer}
@@ -307,7 +307,7 @@ export default function BoardInfoPage() {
             <FileText className="w-6 h-6 mr-3 text-blue-600" />
             Board Actions Summary
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
               <div className="flex items-center justify-between">
@@ -348,7 +348,7 @@ export default function BoardInfoPage() {
 
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <p className="text-sm text-blue-800">
-              <strong>Disclaimer:</strong> This information is compiled from public records from the California Medical Board. 
+              <strong>Disclaimer:</strong> This information is compiled from public records from the California Medical Board.
               All board actions are part of the public record and are intended to inform the public about physician discipline.
             </p>
           </div>

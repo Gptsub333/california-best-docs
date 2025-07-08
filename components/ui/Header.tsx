@@ -15,7 +15,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <div className="text-blue-600">
-            <Image src="/xyz.png" alt="California Best Docs" width={45} height={45} className="w-10 h-10 sm:w-12 sm:h-12" />
+            <Image src="/california-logo.png" alt="California Best Docs" width={45} height={45} className="w-10 h-10 sm:w-12 sm:h-12" />
           </div>
           <div>
             <h1 className="text-base sm:text-lg font-bold text-blue-600 leading-tight">
@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile menu button - Only visible on mobile */}
-        <button 
+        <button
           className="md:hidden flex items-center p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
